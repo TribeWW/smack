@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E402B476243FB57E00DC4A39 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E402B475243FB57E00DC4A39 /* GradientView.swift */; };
 		E429EDF5242BD03E00BED5D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429EDF4242BD03E00BED5D6 /* AppDelegate.swift */; };
 		E429EDF7242BD03E00BED5D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429EDF6242BD03E00BED5D6 /* SceneDelegate.swift */; };
 		E429EDFC242BD03E00BED5D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E429EDFA242BD03E00BED5D6 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		37210B52EB499A1B02239973 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 		968D78375BF43DA5246EEACD /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 		AA49CE5BB6FF4E3BE659A329 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E402B475243FB57E00DC4A39 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E429EDF1242BD03E00BED5D6 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E429EDF4242BD03E00BED5D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E429EDF6242BD03E00BED5D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		E4465513243771B900E1F4C3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E402B475243FB57E00DC4A39 /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			files = (
 				E44655162437724000E1F4C3 /* ChatVC.swift in Sources */,
 				E429EDF5242BD03E00BED5D6 /* AppDelegate.swift in Sources */,
+				E402B476243FB57E00DC4A39 /* GradientView.swift in Sources */,
 				E429EDF7242BD03E00BED5D6 /* SceneDelegate.swift in Sources */,
 				E47DF0232430DB6E00C03EDE /* SWRevealViewController.m in Sources */,
 				E44655182437725900E1F4C3 /* ChannelVC.swift in Sources */,
