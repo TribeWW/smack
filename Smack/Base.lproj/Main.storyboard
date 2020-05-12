@@ -372,7 +372,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWC-ju-evs">
-                                <rect key="frame" x="62.5" y="577" width="250" height="50"/>
+                                <rect key="frame" x="62.5" y="547" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.035294117649999998" green="0.1647058824" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="Wu2-4Z-Tsk"/>
@@ -433,7 +433,7 @@
                             <constraint firstItem="b9o-qW-iEd" firstAttribute="top" secondItem="sbf-PE-gJJ" secondAttribute="bottom" constant="40" id="Ia5-Qo-V88"/>
                             <constraint firstItem="SRE-2b-gHe" firstAttribute="top" secondItem="foJ-sC-6Uf" secondAttribute="top" constant="20" id="QUw-vg-zlf"/>
                             <constraint firstItem="cag-wc-KBf" firstAttribute="centerX" secondItem="w2j-bO-Tn1" secondAttribute="centerX" id="TgB-WK-k5g"/>
-                            <constraint firstItem="foJ-sC-6Uf" firstAttribute="bottom" secondItem="iWC-ju-evs" secondAttribute="bottom" constant="20" id="Uj3-66-16A"/>
+                            <constraint firstItem="foJ-sC-6Uf" firstAttribute="bottom" secondItem="iWC-ju-evs" secondAttribute="bottom" constant="50" id="Uj3-66-16A"/>
                             <constraint firstItem="cag-wc-KBf" firstAttribute="top" secondItem="b9o-qW-iEd" secondAttribute="bottom" constant="40" id="Z0M-QH-X9D"/>
                             <constraint firstItem="foJ-sC-6Uf" firstAttribute="trailing" secondItem="SRE-2b-gHe" secondAttribute="trailing" constant="16" id="eZV-HD-ROA"/>
                             <constraint firstItem="iWC-ju-evs" firstAttribute="centerX" secondItem="w2j-bO-Tn1" secondAttribute="centerX" id="iRT-zV-Zja"/>
