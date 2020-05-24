@@ -28,7 +28,11 @@ class CreateAccountVC: UIViewController {
         guard let pass = passTxt.text , passTxt.text != "" else {return}
         AuthService.instance.registerUser(email: email, password: pass) { (success) in
             if success {
-                print("registered user")
+                AuthService.instance.loginUser(email: email, password: pass) { (success) in
+                    if success {
+                        print("Logged In user! Bitches...!!", AuthService.instance.authToken)
+                    }
+                }
             }
         }
     }
