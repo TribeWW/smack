@@ -468,6 +468,7 @@
                         <outlet property="userImg" destination="cag-wc-KBf" id="dVi-1c-GTs"/>
                         <outlet property="usernameTxt" destination="mfa-4C-TFM" id="BSb-Hs-4lq"/>
                         <segue destination="g4c-zc-tg3" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="jsU-NK-uh5"/>
+                        <segue destination="g4c-zc-tg3" kind="unwind" identifier="prepareForUnwind" unwindAction="prepareForUnwindWithSegue:" id="hNj-tN-hAb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yzr-5e-OXW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
