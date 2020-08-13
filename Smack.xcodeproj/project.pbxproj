@@ -23,6 +23,7 @@
 		E44655182437725900E1F4C3 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44655172437725900E1F4C3 /* ChannelVC.swift */; };
 		E47DF0232430DB6E00C03EDE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47DF0222430DB6E00C03EDE /* SWRevealViewController.m */; };
 		E4D3C16A244590AD002DAD12 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3C169244590AD002DAD12 /* Constants.swift */; };
+		E4E7434924CF89BD00CBF5C6 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7434824CF89BD00CBF5C6 /* CircleImage.swift */; };
 		E4F885BE248F552000BB560C /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F885BD248F552000BB560C /* AvatarPickerVC.swift */; };
 		EB9258C493C75E55C6C8A846 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA49CE5BB6FF4E3BE659A329 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		E47DF0212430DB6E00C03EDE /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		E47DF0222430DB6E00C03EDE /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		E4D3C169244590AD002DAD12 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E4E7434824CF89BD00CBF5C6 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		E4F885BD248F552000BB560C /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +149,7 @@
 				E402B475243FB57E00DC4A39 /* GradientView.swift */,
 				E440642D24706C6F0077826F /* RoundedButton.swift */,
 				E4297DA02494D00D00DDA590 /* AvatarCell.swift */,
+				E4E7434824CF89BD00CBF5C6 /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				E47DF0232430DB6E00C03EDE /* SWRevealViewController.m in Sources */,
 				E44655182437725900E1F4C3 /* ChannelVC.swift in Sources */,
 				E4F885BE248F552000BB560C /* AvatarPickerVC.swift in Sources */,
+				E4E7434924CF89BD00CBF5C6 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -37,3 +37,9 @@ let HEADER1: HTTPHeaders = [
     "Authorization":"Bearer \(AuthService.instance.authToken)",
     "Content-Type": "application/json; charset=utf-8"
 ]
+
+// Colors
+let smackPurplePlaceholder = #colorLiteral(red: 0.1960784314, green: 0.1647058824, blue: 0.368627451, alpha: 0.5)
+
+// Notification Constants
+let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")

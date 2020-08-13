@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -112,7 +112,7 @@
                                     <action selector="loginBtnPressed:" destination="qRu-lP-0jl" eventType="touchUpInside" id="vFy-8P-gf6"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Rtq-4O-WGz">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Rtq-4O-WGz" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="20" y="572" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="Hie-67-3bk"/>
@@ -402,7 +402,7 @@
                                 <color key="textColor" red="0.035294117649999998" green="0.1647058824" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="cag-wc-KBf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="cag-wc-KBf" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="302" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="5EM-vX-zsN"/>
@@ -440,17 +440,23 @@
                                     <action selector="pickBGColorPressed:" destination="6Uz-oG-Epf" eventType="touchUpInside" id="FFQ-x4-Ke9"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="fnd-QW-5a5">
+                                <rect key="frame" x="169" y="205" width="37" height="37"/>
+                                <color key="color" red="0.035294117649999998" green="0.1647058824" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="b9o-qW-iEd" firstAttribute="centerX" secondItem="w2j-bO-Tn1" secondAttribute="centerX" id="1iK-sc-xrE"/>
                             <constraint firstItem="NZv-XS-kpA" firstAttribute="top" secondItem="cag-wc-KBf" secondAttribute="top" id="E3g-ax-nky"/>
                             <constraint firstItem="b9o-qW-iEd" firstAttribute="top" secondItem="sbf-PE-gJJ" secondAttribute="bottom" constant="40" id="Ia5-Qo-V88"/>
+                            <constraint firstItem="fnd-QW-5a5" firstAttribute="centerY" secondItem="w2j-bO-Tn1" secondAttribute="centerY" constant="-100" id="Isd-tn-DWj"/>
                             <constraint firstItem="SRE-2b-gHe" firstAttribute="top" secondItem="foJ-sC-6Uf" secondAttribute="top" constant="20" id="QUw-vg-zlf"/>
                             <constraint firstItem="cag-wc-KBf" firstAttribute="centerX" secondItem="w2j-bO-Tn1" secondAttribute="centerX" id="TgB-WK-k5g"/>
                             <constraint firstItem="foJ-sC-6Uf" firstAttribute="bottom" secondItem="iWC-ju-evs" secondAttribute="bottom" constant="50" id="Uj3-66-16A"/>
                             <constraint firstItem="cag-wc-KBf" firstAttribute="top" secondItem="b9o-qW-iEd" secondAttribute="bottom" constant="40" id="Z0M-QH-X9D"/>
                             <constraint firstItem="foJ-sC-6Uf" firstAttribute="trailing" secondItem="SRE-2b-gHe" secondAttribute="trailing" constant="16" id="eZV-HD-ROA"/>
+                            <constraint firstItem="fnd-QW-5a5" firstAttribute="centerX" secondItem="w2j-bO-Tn1" secondAttribute="centerX" id="iDQ-zd-xbx"/>
                             <constraint firstItem="iWC-ju-evs" firstAttribute="centerX" secondItem="w2j-bO-Tn1" secondAttribute="centerX" id="iRT-zV-Zja"/>
                             <constraint firstItem="ekA-ER-691" firstAttribute="top" secondItem="NZv-XS-kpA" secondAttribute="bottom" constant="4" id="jaH-IJ-7No"/>
                             <constraint firstItem="sbf-PE-gJJ" firstAttribute="top" secondItem="foJ-sC-6Uf" secondAttribute="top" constant="60" id="lMJ-Wq-UZQ"/>
@@ -465,6 +471,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="VO6-Pg-BBa" id="2tg-66-5wg"/>
                         <outlet property="passTxt" destination="V2J-Jy-ZEh" id="yWW-u9-TZK"/>
+                        <outlet property="spinner" destination="fnd-QW-5a5" id="cbi-46-nKg"/>
                         <outlet property="userImg" destination="cag-wc-KBf" id="dVi-1c-GTs"/>
                         <outlet property="usernameTxt" destination="mfa-4C-TFM" id="BSb-Hs-4lq"/>
                         <segue destination="g4c-zc-tg3" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="jsU-NK-uh5"/>
