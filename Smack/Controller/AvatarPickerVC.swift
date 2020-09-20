@@ -42,6 +42,15 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
         return 28
     }
     
+    @IBAction func segmentControlChanged(_ sender: Any) {
+        if segmentControl.selectedSegmentIndex == 0 {
+            avatarType = .dark
+        } else {
+            avatarType = .light
+        }
+        collectionView.reloadData()
+    } 
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         var numOfColumns : CGFloat = 3
@@ -70,15 +79,7 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func segmentControlChanged(_ sender: Any) {
-        if segmentControl.selectedSegmentIndex == 0 {
-            avatarType = .dark
-        } else {
-            avatarType = .light
-        }
-        collectionView.reloadData()
-    }
-    
+   
     
 
 }

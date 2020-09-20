@@ -41,9 +41,11 @@ class CreateAccountVC: UIViewController {
     @IBAction func createAccountPressed(_ sender: Any) {
         spinner.isHidden = false
         spinner.startAnimating()
+        
         guard let name = usernameTxt.text , usernameTxt.text != "" else {return}
         guard let email = emailTxt.text , emailTxt.text != "" else {return}
         guard let pass = passTxt.text , passTxt.text != "" else {return}
+        
         AuthService.instance.registerUser(email: email, password: pass) { (success) in
             if success {
                 AuthService.instance.loginUser(email: email, password: pass, completion: { (success) in
