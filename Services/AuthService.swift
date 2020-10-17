@@ -134,8 +134,8 @@ class AuthService {
                      debugPrint(error)
                  }
                 
-                 self.isLoggedIn = true
-                 completion(true)
+//                 self.isLoggedIn = true
+//                 completion(true)
                 
             } else {
                 completion(false)
@@ -144,6 +144,37 @@ class AuthService {
         }
         
     }
+    
+    func findUserByEmail(completion: @escaping CompletionHandler) {
+        AF.request("\(URL_USER_BY_EMAIL)\(userEmail)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: HEADER1).responseJSON { (response) in
+            if response.error == nil {
+                            guard let data = response.data else { return }
+                             do {
+                                let json = try JSON(data: data)
+                                let id = json["_id"].stringValue
+                                let color = json["avatarColor"].stringValue
+                                let avatarName = json["avatarName"].stringValue
+                                let email = json["email"].stringValue
+                                let name = json["name"].stringValue
+                                
+                                UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
+                                
+                                completion(true)
+                                
+                             } catch {
+                                 debugPrint(error)
+                             }
+                            
+            //                 self.isLoggedIn = true
+            //                 completion(true)
+                            
+                        } else {
+                            completion(false)
+                            debugPrint(response.error as Any)
+                        }
+        }
+    }
+    
     
 
 }
